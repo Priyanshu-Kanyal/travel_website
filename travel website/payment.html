@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment for Hotel Booking</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Payment Information</h1>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****" required>
+        
+            <div class="card-icons">
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="MasterCard">
+                <!-- Add more card icons as needed -->
+            </div>
+        
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+        
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="***" required>
+        
+            <button type="button" onclick="processPayment()">Submit Payment</button>
+        </form>
+        
+
+        <div id="paymentResult"></div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
+

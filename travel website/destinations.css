@@ -1,0 +1,44 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    
+}
+.hero{
+    align-self: center;
+}
+.destination-cards{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+
+}
+.image{
+    width: 900px;
+    height: 500px;
+}

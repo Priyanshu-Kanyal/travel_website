@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFF THE MAP - login</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <link rel="stylesheet" type="text/css" href="D:\New folder (2)\hackathon\style.css">
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username === "Priyanshu" && password === "vit123") {
+                 alert("Login successful!");
+                 window.location.href = "newpage.html";
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+        </script>
+    </head>
+<body>
+    <div class="container2">
+    <div class="container">
+  <div class="element1"> 
+            <img src="back.png" alt="Сampus Connect" loading="lazy" id="logo">
+    </div>
+    <div class="element1">
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+</div>
+</div>
+
+<div class="element2"><div>  </div>
+    <a href="https://www.google.com/" ><img src="google.png" alt="google" loading="lazy" class="hero1"></a>
+    <a href="https://www.youtube.com/"><img src="you.png" alt="instagram" loading="lazy" class="hero"></a>
+    <a href="https://www.instagram.com/"> <img src="insta.png" alt="youtube" loading="lazy" class="hero"></a></div>
+<div class="element3">By proceeding, you agree to OFF-THE-MAP's  Privacy Policy, User Agreement and T&Cs
+</div>
+</div>
+
+    <script src="login.js"></script>
+</body>
+</html>

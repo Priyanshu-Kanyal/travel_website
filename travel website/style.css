@@ -1,0 +1,93 @@
+body {
+    font-family: Georgia, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fefafa;
+    font-weight: bold;
+    
+}
+
+form {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #212121;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #070707;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.container2{
+    display: inline;
+}
+#logo{
+    height:250px;
+    width: 350px;
+    border-radius: 50%;
+
+}
+.element1,
+.element2 {
+    flex: 1;
+}
+.hero1{
+    height:50px;
+    width: 60px;
+    border-radius: 50%;
+    display:inline;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 20px;
+    margin-left: 200px;
+    
+}
+.hero{
+    height:50px;
+    width: 60px;
+    border-radius: 50%;
+    display:inline;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 20px;
+    
+}
+body {
+    background-image: url("back2.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    backdrop-filter:blur(3px);
+}
+.element3{
+    font-weight: 200;
+    margin-top: 150px;
+}

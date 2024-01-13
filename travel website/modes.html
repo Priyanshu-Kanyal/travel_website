@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .travel-options {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .travel-option {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .travel-option:hover {
+            background-color: #eee;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Travel Options</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Destinations</a> |
+        <a href="#">Packages</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Select Your Mode of Travel</h2>
+        <div class="travel-options">
+            <div class="travel-option" onclick="selectMode('flights')">Flights</div>
+            <div class="travel-option" onclick="selectMode('road')">Road</div>
+            <div class="travel-option" onclick="selectMode('trains')">Trains</div>
+        </div>
+
+        <div id="flights" style="display: none;">
+            <h3>Flights Information</h3>
+            <p>Explore the world with our extensive flight options.</p>
+        </div>
+
+        <div id="road" style="display: none;">
+            <h3>Road Trip Information</h3>
+            <p>Hit the road and discover new destinations by car.</p>
+        </div>
+
+        <div id="trains" style="display: none;">
+            <h3>Train Journey Information</h3>
+            <p>Experience scenic train journeys to various destinations.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Travel Options. All rights reserved.
+    </footer>
+
+    <script>
+        function selectMode(mode) {
+            // Hide all modes
+            document.getElementById('flights').style.display = 'none';
+            document.getElementById('road').style.display = 'none';
+            document.getElementById('trains').style.display = 'none';
+
+            // Show the selected mode
+            document.getElementById(mode).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
